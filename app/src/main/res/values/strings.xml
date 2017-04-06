@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TestBackend</string>
+    <string name="hello_world">HELLO</string>
+    <string name="storeButton">Store Value</string>
+    <string name="RetrieveButton">Retrieve Value</string>
+    <string name="updateButton">Update Value</string>
+    <string name="testOut" />
+    <string name="storeValue" />
+    <string name="pullValue" />
+    <string name="updateValue" />
+</resources>

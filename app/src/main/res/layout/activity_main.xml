@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.george.testbackend.MainActivity">
+
+    <EditText
+        android:id="@+id/updateValue"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:hint="To Be Updated"
+        android:inputType="textPersonName"
+        android:text="@string/updateValue"
+        app:layout_constraintLeft_toRightOf="@+id/button3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retrieveValue"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+        android:id="@+id/retrieveValue"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="67dp"
+        android:ems="10"
+        android:hint="To Be Pulled"
+        android:inputType="textPersonName"
+        android:text="@string/pullValue"
+        app:layout_constraintLeft_toLeftOf="@+id/updateValue"
+        app:layout_constraintRight_toRightOf="@+id/updateValue"
+        app:layout_constraintTop_toBottomOf="@+id/storeValue"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="139dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="65dp"
+        android:elevation="0dp"
+        android:onClick="onButtonTap1"
+        android:text="@string/storeButton"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="327dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
+        android:onClick="onButtonTap3"
+        android:text="@string/RetrieveButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/button"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="41dp"
+        android:onClick="onButtonTap2"
+        android:text="@string/updateButton"
+        app:layout_constraintLeft_toLeftOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+        android:id="@+id/storeValue"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:hint="To Be Stored"
+        android:inputType="textPersonName"
+        android:text="@string/storeValue"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintLeft_toLeftOf="@+id/retrieveValue"
+        app:layout_constraintRight_toRightOf="@+id/retrieveValue"
+        app:layout_constraintTop_toTopOf="@+id/button"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+</android.support.constraint.ConstraintLayout>
