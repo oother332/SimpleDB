@@ -11,6 +11,7 @@
 ## To Complete
 
   The backend database where the core function of the application lies
+  
   Thorough understanding of AWS services
 
 
